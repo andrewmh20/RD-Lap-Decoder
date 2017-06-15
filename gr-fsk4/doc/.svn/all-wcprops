@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/7945/gnuradio/branches/releases/3.1/gr-howto-write-a-block/doc
+END
+src_lib_Makefile_1.am
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/7945/gnuradio/branches/releases/3.1/gr-howto-write-a-block/doc/src_lib_Makefile_1.am
+END
+howto_1.i
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/doc/howto_1.i
+END
+src_lib_Makefile_2.am
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/7945/gnuradio/branches/releases/3.1/gr-howto-write-a-block/doc/src_lib_Makefile_2.am
+END
+qa_howto_1.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/doc/qa_howto_1.py
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/doc/Makefile.am
+END
+howto-write-a-block.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/doc/howto-write-a-block.xml
+END
+make_numbered_listing.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/doc/make_numbered_listing.py
+END

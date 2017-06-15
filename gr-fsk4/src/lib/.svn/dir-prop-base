@@ -1,0 +1,16 @@
+K 10
+svn:ignore
+V 75
+Makefile
+Makefile.in
+.la
+.lo
+.deps
+.libs
+*.la
+*.lo
+*.pyc
+howto.cc
+howto.py
+
+END

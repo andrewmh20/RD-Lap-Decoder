@@ -1,0 +1,14 @@
+K 10
+svn:ignore
+V 63
+*.cache
+*.la
+*.lo
+*.pc
+.deps
+.la
+.libs
+.lo
+Makefile
+Makefile.in
+END

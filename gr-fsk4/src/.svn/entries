@@ -1,0 +1,47 @@
+8
+
+dir
+8156
+http://gnuradio.org/svn/gnuradio/branches/releases/3.1/gr-howto-write-a-block/src
+http://gnuradio.org/svn
+
+
+
+2008-03-05T21:49:39.516671Z
+7945
+jcorgan
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+221aa14e-8319-0410-a670-987f0aec2ac5
+
+python
+dir
+
+lib
+dir
+
+Makefile.am
+file
+
+
+
+
+2008-01-20T23:20:04.000000Z
+1fc999f2ab53c8291cd16992da92575c
+2007-07-21T03:44:38.363685Z
+6044
+eb
+has-props
+

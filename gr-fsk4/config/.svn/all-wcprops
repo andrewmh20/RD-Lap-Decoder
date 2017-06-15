@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config
+END
+gr_sysv_shm.m4
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/gr_sysv_shm.m4
+END
+gr_check_createfilemapping.m4
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/gr_check_createfilemapping.m4
+END
+gr_doxygen.m4
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/gr_doxygen.m4
+END
+gr_set_md_cpu.m4
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/gr_set_md_cpu.m4
+END
+usrp_fusb_tech.m4
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/usrp_fusb_tech.m4
+END
+mkstemp.m4
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/mkstemp.m4
+END
+pkg.m4
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/pkg.m4
+END
+cppunit.m4
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/cppunit.m4
+END
+lf_cxx.m4
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/lf_cxx.m4
+END
+usrp_sdcc.m4
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/usrp_sdcc.m4
+END
+gr_no_undefined.m4
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/gr_no_undefined.m4
+END
+onceonly.m4
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/onceonly.m4
+END
+usrp_libusb.m4
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/usrp_libusb.m4
+END
+gr_require_mc4020.m4
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/gr_require_mc4020.m4
+END
+lf_x11.m4
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/lf_x11.m4
+END
+gr_scripting.m4
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/gr_scripting.m4
+END
+bnv_have_qt.m4
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/bnv_have_qt.m4
+END
+gr_swig.m4
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/gr_swig.m4
+END
+gr_gprof.m4
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/gr_gprof.m4
+END
+lf_cc.m4
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/lf_cc.m4
+END
+gr_python.m4
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/gr_python.m4
+END
+lf_warnings.m4
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/lf_warnings.m4
+END
+gr_pwin32.m4
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/gr_pwin32.m4
+END
+gr_check_usrp.m4
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/gr_check_usrp.m4
+END
+gr_boost.m4
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/gr_boost.m4
+END
+gr_omnithread.m4
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/gr_omnithread.m4
+END
+acx_pthread.m4
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/acx_pthread.m4
+END
+gr_x86_64.m4
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/gr_x86_64.m4
+END
+gr_check_mc4020.m4
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/gr_check_mc4020.m4
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/Makefile.am
+END
+gr_check_shm_open.m4
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/gr_check_shm_open.m4
+END
+gr_libgnuradio_core_extra_ldflags.m4
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/6619/gnuradio/branches/releases/3.1/gr-howto-write-a-block/config/gr_libgnuradio_core_extra_ldflags.m4
+END
