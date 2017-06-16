@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "111C4D48CB54DE2908C9F2A7893906A47DF5A32E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "221aa14e-8319-0410-a670-987f0aec2ac5++7463" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "111C4D48CB54DE2908C9F2A7893906A47DF5A32E" : 9223372036854775807,
+    "221aa14e-8319-0410-a670-987f0aec2ac5++7463" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0482863F-5D72-4BEC-9638-A0C38048EDEB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "111C4D48CB54DE2908C9F2A7893906A47DF5A32E" : "RD-Lap-Decoder\/",
+    "221aa14e-8319-0410-a670-987f0aec2ac5++7463" : "RD-Lap-Decoder\/RD-Lap-Decoder\/gr-fsk4\/src\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RD-Lap-Decoder",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RD-Lap-Decoder\/RD-Lap-Decoder.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/andrewmh20\/RD-Lap-Decoder.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "111C4D48CB54DE2908C9F2A7893906A47DF5A32E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/gnuradio.org\/svn",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "221aa14e-8319-0410-a670-987f0aec2ac5++7463"
+    }
+  ]
+}
