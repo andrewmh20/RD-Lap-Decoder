@@ -35,8 +35,8 @@
 #endif
 
 #include <fsk4_rdlap_f.h>
-#include <gr_io_signature.h>
-#include <gr_math.h>
+#include <gnuradio/io_signature.h>
+#include <gnuradio/math.h>
 
 
 
@@ -45,7 +45,7 @@
  * Create a new instance of fsk4_rdlap_f and return
  * a boost shared_ptr.  This is effectively the public constructor.
  */
-fsk4_rdlap_f_sptr fsk4_make_rdlap_f (gr_msg_queue_sptr queue, int processing_flags)
+fsk4_rdlap_f_sptr fsk4_make_rdlap_f (gr::msg_queue::sptr queue, int processing_flags)
 {
   return fsk4_rdlap_f_sptr (new fsk4_rdlap_f ( queue, processing_flags));
 }
@@ -67,11 +67,11 @@ static const int MAX_OUT = 1;	// maximum number of output streams
 /*
  * The private constructor
  */
-fsk4_rdlap_f::fsk4_rdlap_f (gr_msg_queue_sptr queue, int processing_flags)
-  : gr_block ("rdlap_f",
-	      gr_make_io_signature (MIN_IN, MAX_IN, sizeof (float)),	
-//	      gr_make_io_signature (MIN_OUT, MAX_OUT, sizeof (float))),
-	      gr_make_io_signature ( 0, 0, 0 )  ),
+fsk4_rdlap_f::fsk4_rdlap_f (gr::msg_queue::sptr queue, int processing_flags)
+: gr::block ("rdlap_f",
+	      gr::io_signature::make (MIN_IN, MAX_IN, sizeof (float)),
+//	      gr::io_signature::make (MIN_OUT, MAX_OUT, sizeof (float))),
+	      gr::io_signature::make ( 0, 0, 0 )  ),
     d_queue(queue)
 {
   int i;
@@ -193,7 +193,7 @@ int fsk4_rdlap_f::viterbi_SED(int s1, int s2)
 
   ss = (d1*d1) + (d2*d2);
 
-//  printf("SED %1X %1X (%i,%i):\t%i\n",s1,s2,d1,d2,ss);
+ //printf("SED %1X %1X (%i,%i):\t%i\n",s1,s2,d1,d2,ss);
   return ss;
 }
 
@@ -344,7 +344,7 @@ fsk4_rdlap_f::process_block()
     symbol_pair = accumulate_block_buffer[j];
     symbol_pair = (symbol_pair << 2) | accumulate_block_buffer[j+1];
   
-    //if (processed_blocks_since_sync == 0) printf("%1X",symbol_pair);
+   // if (processed_blocks_since_sync == 0) printf("%1X",symbol_pair);
 
     viterbi_add_data(symbol_pair);
   }
@@ -360,23 +360,23 @@ fsk4_rdlap_f::process_block()
       //framer_state = 0;
       blocks_in_PDU = -1;
     }
-    else printf("\n");
-    // printf(" Blocks in PDU: %i\n",blocks_in_PDU);
+    else printf("\n\n");
+     //printf(" Blocks in PDU: %i\n",blocks_in_PDU);
   }
 
 
 
   if (processed_blocks_since_sync <= blocks_in_PDU)
   {
-    for (i=0; i<12; i++) printf("%02X ",data[i] & 0xff);
-    printf("\t");
+//    for (i=0; i<12; i++) printf("%02X ",data[i] & 0xff);
+  //  printf("\t");
 
     for (i=0; i<12; i++) 
     {
       if ( (data[i] & 0x7f) < 0x20) printf("."); else printf("%c",data[i] & 0x7f);
     }
 //    printf("\t%lg",omag);
-    printf("\n");
+   // printf("\n");
 
   }
   //else framer_state = 0;

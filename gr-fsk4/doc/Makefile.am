@@ -53,8 +53,8 @@ BUILT_XML_FILES = 			\
 howto-write-a-block.html : howto-write-a-block.xml $(BUILT_XML_FILES)
 
 
-gr_block.h.xml: $(GNURADIO_CORE_INCLUDEDIR)/gr_block.h make_numbered_listing.py
-	$(PYTHON) ./make_numbered_listing.py $(GNURADIO_CORE_INCLUDEDIR)/gr_block.h
+gr_block.h.xml: $(GNURADIO_RUNTIME_INCLUDEDIR)/gr_block.h make_numbered_listing.py
+	$(PYTHON) ./make_numbered_listing.py $(GNURADIO_RUNTIME_INCLUDEDIR)/gr_block.h
 
 howto_square_ff.cc.xml: $(top_srcdir)/src/lib/howto_square_ff.cc make_numbered_listing.py
 	$(PYTHON) ./make_numbered_listing.py $(top_srcdir)/src/lib/howto_square_ff.cc 

@@ -25,8 +25,8 @@
 #ifndef INCLUDED_FSK4_RDLAP_F_H
 #define INCLUDED_FSK4_RDLAP_F_H
 
-#include <gr_block.h>
-#include <gr_msg_queue.h>
+#include <gnuradio/block.h>
+#include <gnuradio/msg_queue.h>
 
 
 
@@ -76,22 +76,22 @@ class fsk4_rdlap_f;
 typedef boost::shared_ptr<fsk4_rdlap_f> fsk4_rdlap_f_sptr;
 
 
-fsk4_rdlap_f_sptr fsk4_make_rdlap_f (gr_msg_queue_sptr queue, int processing_flags);
+fsk4_rdlap_f_sptr fsk4_make_rdlap_f (gr::msg_queue::sptr queue, int processing_flags);
 
 
 
-class fsk4_rdlap_f : public gr_block
+class fsk4_rdlap_f : public gr::block
 {
 private:
   // The friend declaration allows fsk4_make_square_ff to
   // access the private constructor.
 
-  friend fsk4_rdlap_f_sptr fsk4_make_rdlap_f (gr_msg_queue_sptr queue, int processing_flags);
+  friend fsk4_rdlap_f_sptr fsk4_make_rdlap_f (gr::msg_queue::sptr queue, int processing_flags);
 
-  fsk4_rdlap_f (gr_msg_queue_sptr queue, int processing_flags);  	// private constructor
+  fsk4_rdlap_f (gr::msg_queue::sptr queue, int processing_flags);  	// private constructor
 
 
-  gr_msg_queue_sptr d_queue;		 
+  gr::msg_queue::sptr d_queue;		 
 
   // ----- rd-lap processing: framer detects & splits off frame sync
   void framer(unsigned char sym);

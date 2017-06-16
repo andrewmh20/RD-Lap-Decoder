@@ -35,15 +35,16 @@
 #endif
 
 #include <fsk4_demod_ff.h>
-#include <gr_io_signature.h>
-#include <gr_math.h>
+#include <gnuradio/message.h>
+#include <gnuradio/io_signature.h>
+#include <gnuradio/math.h>
 
 
 /*
  * Create a new instance of fsk4_demod_ff and return
  * a boost shared_ptr.  This is effectively the public constructor.
  */
-fsk4_demod_ff_sptr fsk4_make_demod_ff (gr_msg_queue_sptr queue, float sample_rate, float symbol_rate)
+fsk4_demod_ff_sptr fsk4_make_demod_ff (gr::msg_queue::sptr queue, float sample_rate, float symbol_rate)
 {
   return fsk4_demod_ff_sptr (new fsk4_demod_ff ( queue, sample_rate, symbol_rate));
 }
@@ -65,10 +66,10 @@ static const int MAX_OUT = 1;	// maximum number of output streams
 /*
  * The private constructor
  */
-fsk4_demod_ff::fsk4_demod_ff (gr_msg_queue_sptr queue, float sample_rate, float symbol_rate)
-  : gr_block ("demod_ff",
-	      gr_make_io_signature (MIN_IN, MAX_IN, sizeof (float)),	
-	      gr_make_io_signature (MIN_OUT, MAX_OUT, sizeof (float))),
+fsk4_demod_ff::fsk4_demod_ff (gr::msg_queue::sptr queue, float sample_rate, float symbol_rate)
+: gr::block ("demod_ff",
+             gr::io_signature::make (MIN_IN, MAX_IN, sizeof (float)),
+             gr::io_signature::make (MIN_OUT, MAX_OUT, sizeof (float))),
     d_queue(queue)
 {
   int i;
@@ -137,7 +138,7 @@ fsk4_demod_ff::send_frequency_correction()
   coarse_frequency_correction = 0.0;
 
   // build & send a message
-  gr_message_sptr msg = gr_make_message(0, arg1, arg2, 0); // vlen() * sizeof(float));
+    gr::message::sptr msg = gr::message::make(0, arg1, arg2, 0); // vlen() * sizeof(float));
 //  memcpy(msg->msg(), &d_max[0], vlen() * sizeof(float));
   d_queue->insert_tail(msg);
   msg.reset();

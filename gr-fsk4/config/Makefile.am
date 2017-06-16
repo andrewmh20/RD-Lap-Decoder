@@ -36,7 +36,7 @@ m4macros = 			\
 	gr_check_shm_open.m4	\
 	gr_doxygen.m4		\
 	gr_gprof.m4		\
-	gr_libgnuradio_core_extra_ldflags.m4 \
+	gr_libgnuradio_runtime_extra_ldflags.m4 \
 	gr_no_undefined.m4	\
 	gr_omnithread.m4	\
 	gr_pwin32.m4		\

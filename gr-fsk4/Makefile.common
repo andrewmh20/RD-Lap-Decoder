@@ -21,10 +21,10 @@
 # 
 
 # includes
-grincludedir   = $(includedir)/gnuradio
+grincludedir   = $(includedir)
 
 # swig includes 
-swigincludedir = $(grincludedir)/swig
+swigincludedir = $(grincludedir)/gnuradio/swig
 
 # Install this stuff in the appropriate subdirectory
 # This usually ends up at:
@@ -35,7 +35,7 @@ grpyexecdir = $(pyexecdir)/gnuradio
 
 # swig flags
 SWIGPYTHONFLAGS = -fvirtual -python -modern
-SWIGGRFLAGS = -I$(GNURADIO_CORE_INCLUDEDIR)/swig -I$(GNURADIO_CORE_INCLUDEDIR)
+SWIGGRFLAGS = -I$(GNURADIO_RUNTIME_INCLUDEDIR)/swig -I$(GNURADIO_RUNTIME_INCLUDEDIR)
 
 # Don't assume that make predefines $(RM), because BSD make does
 # not. We define it now in configure.ac using AM_PATH_PROG, but now

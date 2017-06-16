@@ -35,8 +35,8 @@
 #endif
 
 #include <fsk4_apco25_f.h>
-#include <gr_io_signature.h>
-#include <gr_math.h>
+#include <gnuradio/io_signature.h>
+#include <gnuradio/math.h>
 
 
 
@@ -45,7 +45,7 @@
  * Create a new instance of fsk4_apco25_f and return
  * a boost shared_ptr.  This is effectively the public constructor.
  */
-fsk4_apco25_f_sptr fsk4_make_apco25_f (gr_msg_queue_sptr queue, int processing_flags)
+fsk4_apco25_f_sptr fsk4_make_apco25_f (gr::msg_queue::sptr queue, int processing_flags)
 {
   return fsk4_apco25_f_sptr (new fsk4_apco25_f ( queue, processing_flags));
 }
@@ -67,11 +67,11 @@ static const int MAX_OUT = 1;	// maximum number of output streams
 /*
  * The private constructor
  */
-fsk4_apco25_f::fsk4_apco25_f (gr_msg_queue_sptr queue, int processing_flags)
-  : gr_block ("apco25_f",
-	      gr_make_io_signature (MIN_IN, MAX_IN, sizeof (float)),	
-//	      gr_make_io_signature (MIN_OUT, MAX_OUT, sizeof (float))),
-	      gr_make_io_signature ( 0, 0, 0 )  ),
+fsk4_apco25_f::fsk4_apco25_f (gr::msg_queue::sptr queue, int processing_flags)
+: gr::block ("apco25_f",
+              gr::io_signature::make (MIN_IN, MAX_IN, sizeof (float)),
+//	      gr::io_signature::make (MIN_OUT, MAX_OUT, sizeof (float))),
+              gr::io_signature::make ( 0, 0, 0 )  ),
     d_queue(queue)
 {
 

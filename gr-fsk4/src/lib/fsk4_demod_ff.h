@@ -25,8 +25,8 @@
 #ifndef INCLUDED_FSK4_DEMOD_FF_H
 #define INCLUDED_FSK4_DEMOD_FF_H
 
-#include <gr_block.h>
-#include <gr_msg_queue.h>
+#include <gnuradio/block.h>
+#include <gnuradio/msg_queue.h>
 
 // Following are gnuradio interpolator taps for mmse; 
 #include "interpolator_taps.h"
@@ -75,21 +75,21 @@ class fsk4_demod_ff;
 typedef boost::shared_ptr<fsk4_demod_ff> fsk4_demod_ff_sptr;
 
 
-fsk4_demod_ff_sptr fsk4_make_demod_ff (gr_msg_queue_sptr queue, float sample_rate, float symbol_rate);
+fsk4_demod_ff_sptr fsk4_make_demod_ff (gr::msg_queue::sptr queue, float sample_rate, float symbol_rate);
 
 
 
-class fsk4_demod_ff : public gr_block
+class fsk4_demod_ff : public gr::block
 {
 private:
   // The friend declaration allows fsk4_make_square_ff to
   // access the private constructor.
 
-  friend fsk4_demod_ff_sptr fsk4_make_demod_ff (gr_msg_queue_sptr queue, float sample_rate, float symbol_rate);
+  friend fsk4_demod_ff_sptr fsk4_make_demod_ff (gr::msg_queue::sptr queue, float sample_rate, float symbol_rate);
 
-  fsk4_demod_ff (gr_msg_queue_sptr queue, float sample_rate, float symbol_rate);  	// private constructor
+  fsk4_demod_ff (gr::msg_queue::sptr queue, float sample_rate, float symbol_rate);  	// private constructor
 
-  gr_msg_queue_sptr d_queue;		  
+  gr::msg_queue::sptr d_queue;
 
   void send_frequency_correction();
 
