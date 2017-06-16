@@ -1,3 +1,9 @@
+#Xcode
+#*.xcodeproj
+#DerivedData
+
+
+
 # # http://www.gnu.org/software/automake
 
 # *.in
